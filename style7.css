@@ -1,0 +1,22 @@
+
+body {
+	background:#edf0f0;
+	font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size:14px;
+	color:#333;
+}
+.banner {
+	padding-top:80px;
+}
+.banner h1 {
+	font-size:36px;
+	text-align:center;
+	font-weight:normal;
+}
+.banner h2 {
+	font-size:18px;
+	color:#535353;
+	text-align:center;
+	font-weight:normal;
+	margin:20px 0 60px;
+}

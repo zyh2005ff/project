@@ -1,0 +1,161 @@
+.map-title {
+    font-size: 70px;
+    line-height: 70px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 150px;
+    z-index: 6;
+    top: 4300px;
+}
+
+.map-title div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.map-title i {
+    display: inline-block;
+    background: url(p3-ic.jpg) no-repeat center top / 100% 100%;
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    background-position: 0 0;
+    margin-left: 11px;
+    position: relative;
+    top: 4px;
+}
+
+
+.hero-title {
+    font-size: 100px;
+    line-height: 100px;
+    color: #f9f8f6;
+    font-weight: bold;
+    position: absolute;
+    color: black;
+    left: 700px;
+    z-index: 6;
+    top: 2100px;
+}
+
+.hero-title div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.hero-title i {
+    display: inline-block;
+    background: url(p3-ic.jpg) no-repeat center top / 100% 100%;
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    background-position: 0 0;
+    margin-left: 11px;
+    position: relative;
+    top: 4px;
+}
+
+
+.game-title {
+    font-size: 80px;
+    line-height: 80px;
+    color: #f9f8f6;
+    font-weight: bold;
+    position: absolute;
+    left: 300px;
+    z-index: 6;
+    top: 1250px;
+}
+
+.game-title div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.game-title i {
+    display: inline-block;
+    background: url(p3-ic.jpg) no-repeat center top / 100% 100%;
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    background-position: 0 0;
+    margin-left: 11px;
+    position: relative;
+    top: 4px;
+}
+
+.nei-title {
+    font-size: 70px;
+    line-height: 70px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 150px;
+    z-index: 6;
+    top: 3550px;
+}
+
+.nei-title div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.nei-title i {
+    display: inline-block;
+    background: url(p3-ic.jpg) no-repeat center top / 100% 100%;
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    background-position: 0 0;
+    margin-left: 11px;
+    position: relative;
+    top: 4px;
+}
+
+.ron-title {
+    font-size: 25px;
+    line-height: 25px;
+    color: red;
+    position: absolute;
+    left: 1600px;
+    z-index: 6;
+    top: 3625px;
+    width: 100%;
+}
+
+.ron-title div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.ron-title1 {
+    font-size: 25px;
+    line-height: 25px;
+    color: red;
+    position: absolute;
+    left: 1600px;
+    z-index: 6;
+    top: 2300px;
+    width: 100%;
+}
+
+.ron-title1 div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.ron-title2 {
+    font-size: 25px;
+    line-height: 25px;
+    color: red;
+    position: absolute;
+    left: 1600px;
+    z-index: 6;
+    top: 4400px;
+    width: 100%;
+}
+
+.ron-title2 div {
+    display: block;
+    unicode-bidi: isolate;
+}

@@ -1,0 +1,61 @@
+.carousel {
+    position: absolute;
+    width: 1500px;
+    margin: 20px auto;
+    overflow: hidden;
+    top: 200px;
+    left: 70px;
+}
+
+.carousel ul {
+    list-style: none;
+    position: relative;
+    width: 3500px; 
+    margin: 0;
+    padding: 0;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+}
+
+.carousel ul li {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: 280px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    
+}
+
+
+@keyframes slide {
+    0% { left: 0; }
+    16.67% { left: -600px; }
+    33.33% { left: -1200px; }
+    50% { left: -1800px; }
+    66.67% { left: -2400px; }
+}
+
+.carousel ul {
+    animation: slide 15s infinite;
+}
+
+.carousel:hover ul {
+    animation-play-state: paused;
+}
+

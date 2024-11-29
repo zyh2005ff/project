@@ -1,0 +1,60 @@
+.btn-more1 i {
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+    background-position: -63px -175px;
+    margin-top: -10px;
+    font-style: italic;
+    position: absolute;
+    top: 3635px;
+    left: 1725px;
+}
+
+.icon-ani {
+    background: url(icon-spr.jpg) no-repeat;
+    background-size: 500px;
+}
+.icon-ani{
+    position: absolute;
+    animation: moveHorizontal 1s linear infinite; 
+}
+@keyframes moveHorizontal {
+    0% {
+        left: 1730px; 
+    }
+    25% {
+        left: 1740px; 
+    }
+    50% {
+        left: 1750px; 
+    }
+    75% {
+        left: 1740px; 
+    }
+    100% {
+        left: 1730px;
+    }
+}
+.btn-more2 i {
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+    background-position: -63px -175px;
+    margin-top: -10px;
+    font-style: italic;
+    position: absolute;
+    top: 2310px;
+    left: 1725px;
+}
+
+.btn-more3 i {
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+    background-position: -63px -175px;
+    margin-top: -10px;
+    font-style: italic;
+    position: absolute;
+    top: 4410px;
+    left: 1725px;
+}
