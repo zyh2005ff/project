@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿色游戏，健康生活</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="style5.css">
+  <link rel="stylesheet" href="style6.css">
+  <link rel="stylesheet" href="style7.css">
+  <link rel="stylesheet" href="style8.css">
+  <link rel="stylesheet" href="style10.css">
+  <link rel="stylesheet" href="swiper-bundle.css">
+  <link rel="stylesheet" href="style11.css">
+
+  <style>
+    .scroll{
+        overflow: hidden;
+        position: absolute;
+        top: 2000px;
+        left: -100px;
+    }
+
+    .scr{
+        overflow: hidden;
+        position: absolute;
+        top: 2400px;
+        left: 0;
+    }
+
+    .nei{
+        overflow: hidden;
+        position: absolute;
+        top: 3400px;
+        left: 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;
+      position:absolute;
+      top: 4500px;
+      left: 0;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+  </style>
+</head>
+<body>
+    <nav>
+        <h1 class="brand"><a href="https://val.qq.com/main.html" alt="VALORANT《无畏契约》官方网站">
+            <img src="va.jpg" alt=""></a></h1>
+        <ul>
+            <li><a href="index2.html">英雄介绍</a></li>
+            <li><a href="index4.html">地图介绍</a></li>
+            <li><a href="index1.html">内容中心</a></li>
+            <li><a href="index3.html">画廊作品</a></li>
+            <li><a href="https://val.qq.com/main.html">官网</a></li>
+        </ul>
+        <div style="clear:both"></div>
+    </nav>
+    <div class="responsive-bar">
+        <h3 class="brand"><a href="https://val.qq.com/main.html" class="logo" alt="VALORANT《无畏契约》官方网站"><img src="va.jpg" alt=""></a></h3>
+        <h4 class="menu">Menu</h4>
+        <div style="clear:both"></div>
+    </div>
+    <script src="jquery.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu").click(function(){
+                $("nav").slideToggle(500);
+            })
+        })
+    </script>
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="va.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <p>《英雄联盟》开发商拳头游戏全新力作,风靡全球的5V5战术射击游戏</p>
+            <h1><img src="wuwei.jpg" alt=""></h1>
+            <i class="kv-icon"></i>
+       </div>
+    </div>
+    <div class="content1"><img src="cont-bg.jpg" alt="">
+        <div class="carousel">
+            <div class="container1">
+                <a href="jieshao.mp4"><img src="riluo1.jpg" class="img" alt="Image 1"></a>
+                <a href="bisai.mp4"><img src="m-p2-img5.jpg" class="img" alt="Image 2"></a>
+                <a href="pifu.mp4"><img src="qiyue.jpg" class="img" alt="Image 3"></a>
+            </div>
+            </div>
+            <div class="shift">
+                <div class="btn left">&lt;</div>
+                <div class="btn right">&gt;</div>
+            </div>
+            <div class="bottom">
+                <div class="indicator" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+            </div>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const container1 = document.querySelector('.container1');
+                const indicators = document.querySelectorAll('.indicator');
+                const totalImages = document.querySelectorAll('.img').length;
+                let currentIndex = 0;
+    
+                function updateCarousel() {
+                    container1.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    indicators.forEach((indicator, index) => {
+                        indicator.style.backgroundColor = index === currentIndex ? 'teal' : 'gray';
+                    });
+                }
+    
+                document.querySelector('.left').addEventListener('click', function() {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+                    updateCarousel();
+                });
+    
+                document.querySelector('.right').addEventListener('click', function() {
+                    currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+                    updateCarousel();
+                });
+    
+                indicators.forEach(indicator => {
+                    indicator.addEventListener('click', function() {
+                        currentIndex = parseInt(this.getAttribute('data-index'));
+                        updateCarousel();
+                    });
+                });
+                updateCarousel();
+            });
+        </script>
+    
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="map/cover.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover6.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover8.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover9.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="map/cover10.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script src="swiper-bundle.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+     
+     <div class="game-title">游戏介绍<i class="icon-spr"></i></div>
+   
+    <div class="map-title">地图品鉴<i class="icon-spr"></i></div>
+    
+    
+    <div class="hero-title">英雄展示<i class="icon-spr"></i></div>
+   
+    <div class="scr">
+        <iframe src="index-3.html" width="1800px" height="1000px" style="border:none;"></iframe>
+        </div>
+        
+    <div class="nei">
+        <iframe src="index-4.html" width="1870px" height="1000px" style="border:none;"></iframe>
+        </div>    
+
+        <div class="nei-title">内容中心<i class="icon-spr"></i></div>
+
+        <a href="index1.html"><div class="ron-title">查看更多<i class="icon-spr"></i></div>
+        <div class="btn-more1"><i class="icon-ani"></i></div></a>
+
+        <a href="index2.html"><div class="ron-title1">查看更多<i class="icon-spr"></i></div>
+            <div class="btn-more2"><i class="icon-ani"></i></div></a>
+
+        <a href="index4.html"><div class="ron-title2">查看更多<i class="icon-spr"></i></div>
+            <div class="btn-more3"><i class="icon-ani"></i></div></a>
+
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                        <h3>关于我们</h3>
+                        <p>无畏契约是一款多人在线竞技射击游戏，由Riot Games开发，与《英雄联盟》同一家公司。该游戏在2020年推出，以独特的第一人称视角和快节奏的战斗著称。</p>
+                    </div>
+                    <div class="footer-section links">
+                        <h3>页面导航</h3>
+                        <ul>
+                            <li><a href="index.html">主页</a></li>
+                            <li><a href="index2.html">英雄介绍</a></li>
+                            <li><a href="index4.html">地图介绍</a></li>
+                            <li><a href="index1.html">内容中心</a></li>
+                            <li><a href="index3.html">画廊作品</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section social">
+                        <h3>关注我们</h3>
+                        <div class="social-icons">
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAAd61SOvCplM1lOsnVcBKjGntfjcQ-gyFBN7PdPVOpE6k?from_tab_name=main"><img src="tik.jpg" ></a>
+                            <a href="https://space.bilibili.com/147546636?spm_id_from=333.337.0.0"><img src="110_a.png" ></a>
+                            <a href="https://val.qq.com/main.html"><img src="R-C.png"></a>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 FPS Game. All rights reserved.</p>
+                </div>
+            </footer>
+
+
+</body>
+</html>
